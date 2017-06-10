@@ -1,0 +1,28 @@
+---
+layout: page
+description: "Friday Theme by Deenesh Chowdhary"
+---
+{% for post in paginator.posts %}
+<div class="post-preview">
+    <h3><a href="{{ post.url | prepend: site.baseurl }}" class="post-header"> {{ post.title }}</a></h3>
+        {% if post.subtitle %}
+        <p class="post-subtitle">
+            {{ post.subtitle }}
+        </p>
+        {% endif %}
+    <a class="button button-primary" href="{{ post.url | prepend: site.baseurl }}">Keep Reading..</a>
+</div>
+<hr>
+{% endfor %}
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<div class="pager">
+    {% if paginator.previous_page %}
+    <a class="button u-pull-left" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    {% endif %}
+    {% if paginator.next_page %}
+    <a class="button u-pull-right" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    {% endif %}
+</div>
+{% endif %}

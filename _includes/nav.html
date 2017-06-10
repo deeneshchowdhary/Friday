@@ -1,0 +1,20 @@
+ <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+           <li class="navbar-item">
+              <a class="navbar-link" href="{{ site.baseurl }}/">Home</a>
+          </li>
+          {% for page in site.pages %}{% if page.title %}
+		  {% if page.url != '/404.html' %}
+          <li class="navbar-item">
+              <a class="navbar-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          </li>
+          {% endif %}
+          {% endif %}{% endfor %}
+        </ul>
+		<ul class="navbar-list u-pull-right">
+		  <li class="navbar-item brand"><a class="navbar-link brand" href="{{ site.baseurl }}/"> {{ site.title }}</a></li>
+        </ul>
+      </div>
+ </nav>
+		

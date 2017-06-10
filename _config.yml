@@ -1,0 +1,27 @@
+#Friday Theme - Jekyll Version
+#Author: Deenesh Chowdhary
+#Website: http://deeneshchowdhary.com
+#----------------------------------------------------
+title: Friday #Your Beautiful Title goes here
+email: your-email@domain.com #Your Email Address goes here.
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "/friday" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: #Your Twitter Username
+github_username:  deeneshchowdhary
+facebook_username: #Your Facebook Username
+copyright_name: Friday
+email_username: demo@example.com
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+paginate: 5
+gems: [jekyll-paginate, jekyll-feed]
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Readme.md

@@ -1,0 +1,29 @@
+---
+layout: page
+title: About
+description: "Friday Theme by Deenesh Chowdhary"
+---
+<div class="u-text-center">
+ <h2>Lorem Epsum Fullname</h2>
+			 <p> <img src="{{ site.baseurl }}/assets/images/profile.png" alt="your Image" width="200"></p>
+			 <quotes style="favorite-quotes">" The balance in your life is more important than the balance in your checking account. "</quotes>
+			 <h5>Singer &amp; Writer</h5>
+			 <h6>P.O BoX 1234</h6>
+			 <p>Phasellus magna justo, dictum eu placerat eu, laoreet vitae lacus. Integer a ex finibus, dapibus libero eu, porttitor augue. Cras sagittis elit eu nisl tincidunt interdum. Vestibulum felis mauris, ultrices sed lacus ut, posuere ultricies nisl. Curabitur a blandit lorem, ac aliquam dolor. Ut vel pulvinar dui, sed maximus dolor. Quisque in ante feugiat risus finibus ornare a eget magna.</p>
+			 <hr>
+			 <h3 class="">Get In Touch</h3>
+			 <ul class="social-links">
+				{% if site.email_username %}
+				<li><a href="mailto:{{ site.email_username }}" class="button"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+				{% endif %}
+				{% if site.twitter_username %}
+				<li><a href=https://twitter.com/{{ site.twitter_username }}"" class="button"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				{% endif %}
+				{% if site.facebook_username %}
+				<li><a href="https://www.facebook.com/{{ site.facebook_username }}" class="button"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				{% endif %}
+				{% if site.github_username %}
+				<li><a href="https://github.com/{{ site.github_username }}" class="button"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+				{% endif %}
+			 </ul>
+</div>
