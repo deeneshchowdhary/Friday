@@ -1,6 +1,6 @@
 ## Friday Theme - Jekyll Version
 
-## Live Demo &rarr; (https://deeneshchowdhary.github.io/friday/)
+## Live Demo &rarr; (https://deeneshchowdhary.github.io/Friday/)
 
 ![Friday theme preview](/screenshot.png)
 
